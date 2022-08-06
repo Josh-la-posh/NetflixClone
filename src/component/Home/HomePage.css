@@ -81,6 +81,7 @@ main {
     z-index: 0;
 
     position: absolute;
+    /* max-width: 450px; */
     /* top: -64px; */
     bottom: 0;
     left: 0;
@@ -130,6 +131,7 @@ main {
     max-width: 950px;
     padding-top: .85rem;
     text-align: center;
+    margin: 0 auto;
     /* font-weight: 400; */
 }
 
@@ -707,11 +709,19 @@ margin-top: -64px;
 
 #header {
 height: 63vh;
-/* overflow: hidden; */
 }
 
 .header__content {
     font-size: 1.25rem;
+}
+
+.header__content h1 {
+    font-size: 3.125rem;
+    max-width: 640px;
+}
+
+.header__content h2 {
+    max-width: 640px;
 }
 
 .header__form {
@@ -726,7 +736,8 @@ font-size: 1.25rem;
 .header__form h3 {
 font-size: 23px;
 margin: 0 auto;
-max-width: 500px;
+padding: 0 5%;
+max-width: 530px;
 }
 
 .input-details {
@@ -748,6 +759,7 @@ height: 60px;
     padding: 0 1em;
     border-radius: 2px;
     min-width: 74px;
+    min-height: 40px;
 }
 
 .label button::after {
@@ -857,20 +869,13 @@ font-weight: 400;
 
 
 @media (max-width: 549px) {
-    
-    .home__content {
-        position: relative;
-
-        width: 100%;
-        overflow-x: hidden;
-    }
-    
+        
     nav {
         height: 45px;
     }
     
     .nav__content {
-        margin: 0 57px;
+        /* margin: 0 57px; */
     }
     
     .logo {
@@ -888,20 +893,21 @@ font-weight: 400;
     }
     
                             /* MAIN */
-/*     
-    main {
-        margin: 0 auto;
-        margin-top: -64px;
-    } */
     
     #header {
-        padding-top: 50px 5%;
+        padding: 50px 5%;
         height: 63vh;
     }
     
     .header__img {
         background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/c2578c37-8569-4f88-b8f1-67a26a9ddcdd/f5f9d57b-8d7b-494f-a5ac-712f75c1217d/NG-en-20220725-popsignuptwoweeks-perspective_alpha_website_small.jpg");
         background-position: bottom;
+
+        /* position: absolute;
+        top: -90px;
+        right: 0;
+        left: 0;
+        bottom: 0; */
     }
 
     .header__img__blur {
@@ -911,6 +917,7 @@ font-weight: 400;
     
     .header__content {
         padding: 30px 0;
+        margin: 0 auto;
 
         position: relative;
     }
@@ -928,13 +935,14 @@ font-weight: 400;
     
     .header__form {
         font-size: 1.125rem;
+        max-width: 450px;
     }
     
     .header__form h3 {
         font-size: 18px;
         padding: 0 10%;
         margin: 0 auto;
-        max-width: 450px;
+        max-width: unset;
         font-weight: 400;
     }
     
@@ -942,18 +950,21 @@ font-weight: 400;
         display: flex;
         flex-direction: column;
         justify-content: center;
+        max-width: 450px;
     }
 
     .input-details {
         position: relative;
+        max-width: 450px;
+        font-size: 1.125rem;
     }
     
     .header__form-content input {
         margin: 10px auto;
-        max-width: 500px;
+        min-width: unset;
         width: 100%;
-        font-size: 16px;
-        line-height: normal;
+        /* line-height: normal; */
+        /* font-size: 16px; */
         height: 48px;
     }
     

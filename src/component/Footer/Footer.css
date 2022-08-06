@@ -2,10 +2,9 @@
     position: relative;
     border-bottom: none;
     padding-bottom: 0;
-    padding: 70px 45px;
+    padding: 35px 45px;
     margin: 0 auto;
     background-color: rgba(0,0,0,.75);
-    max-width: 1000px;
     width: 100%;
     color: #757575;
 }
@@ -21,9 +20,10 @@
 .site-footer {
     color: #737373;
     margin: 0 auto;
-    padding-top: 0;
+    padding: 30px 0;
     width: 90%;
     font-size: 1em;
+    max-width: 1000px;
 }
 
 .footer-header {
@@ -90,6 +90,17 @@
 .footer-country {
     font-size: 13px;
     margin-top: 24px;
+}
+
+@media (min-width:550px) and (max-width: 740px) {
+    .footer {
+        padding: 40px 5% 50px;
+    }
+    
+    .footer-link__item {
+        width: 33%;
+    }
+    
 }
 
 @media (max-width: 549px) {

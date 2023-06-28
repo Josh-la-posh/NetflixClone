@@ -41,20 +41,20 @@ class SignIn extends Component {
                         <div className="login-content">
                             <div className="login-form__main">
                                 <h1>Sign In</h1>
-                                <form className="login-form" method='post'>
-                                    <div className="input-id">
-                                        <input type="email" name='loginName' className="text-field" />
+                                <form className="login-form">
+                                    <div className="input-id form-floating">
+                                        <input type="email" id='loginName' name='loginName' className="text-field form-control" placeholder='Email or Phone number' required/>
                                         <label className='signin-label' htmlFor="loginName">Email or phone number</label>
                                     </div>
-                                    <div className="input-id">
-                                        <input type="password" name='pass' className="text-field" />
+                                    <div className="input-id form-floating">
+                                        <input type="password" id='pass' name='pass' className="form-control text-field" placeholder='Password' required/>
                                         <label className='signin-label' htmlFor="pass">Password</label>
                                     </div>
                                     <button className="login-button" type='submit'>Sign In</button>
 
                                     <div className="login-form__help">
                                         <div className="remember-me">
-                                            <input type="checkbox" name='rememberMe' />
+                                            <input type="checkbox" name='rememberMe'  />
                                             <label className='' htmlFor="rememberMe"><span>Remember me</span></label>
                                         </div>
                                         <a href="" className="login-help">Need help?</a>

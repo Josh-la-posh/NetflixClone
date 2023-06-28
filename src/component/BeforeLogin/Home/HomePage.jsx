@@ -35,13 +35,15 @@ class Home extends Component {
                     <nav className=''>
                         <div className="nav__content">
                             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/799px-Netflix_2015_logo.svg.png?20190206123158" alt="Logo" className="logo" />
-                            <a href="/signin" className="signin">Sing In</a>
+                            <a href="/signin" className="signin">Sign In</a>
                         </div>
                     </nav>
                     <main>
                         <header id='header'>
-                            <div className="header__img">
-                                <div className="header__img__blur"></div>
+                            <div className="header-img">
+                                <div className="header__img">
+                                    <div className="header__img__blur"></div>
+                                </div>
                             </div>
                             <div className='header__content'>
                                 <h1>Unlimited movies, TV shows, and more.</h1>
@@ -49,9 +51,8 @@ class Home extends Component {
                                 <form action="" className='header__form'>
                                     <h3>Ready to watch? Enter your email to create or restart your membership.</h3>
                                     <div className="header__form-content">
-                                        <div className="input-details" placeholder='email'>
-                                            <input id="email" className='input' type="email" placeholder='' id='email' name='email' />
-                                            {/* <div id="" class="inputError" data-uia="field-email+error">Please enter a valid email address</div> */}
+                                        <div className="input-details form-floating">
+                                            <input className='input form-control' type="email" placeholder='Email address' id='email' name='email' />
                                             <label htmlFor="email" className='placeLabel'>Email address</label>
                                         </div>
                                         <div>
@@ -216,9 +217,8 @@ class Home extends Component {
                                 <form action="" className='header__form cta-form'>
                                     <h3>Ready to warch? Enter your email to create or restart your membership.</h3>
                                     <div className="header__form-content">
-                                        <div className="input-details">
-                                            <input id="email" className='input' type="email" placeholder='' id='email' name='email' />
-                                            {/* <div id="" class="inputError" data-uia="field-email+error">Please enter a valid email address</div> */}
+                                        <div className="input-details form-floating">
+                                            <input id="email" className='form-control' type="email" placeholder='Email address' id='email' name='email' />
                                             <label htmlFor="email" className='placeLabel'>Email address</label>
                                         </div>
                                         <div>

@@ -12,15 +12,12 @@ nav {
     height: 4rem;
     max-width: 1920px;
     width: 100%;
-    position: relative;
-    /* left: 0;
-    top: 0;
-    bottom: 0;
-    right: 0; */
     color: #333;
     background-color: transparent;
     transition: background-color .5s;
     z-index: 10;
+
+    position: relative;
 }
 
 .nav__content {
@@ -55,7 +52,7 @@ nav {
 
 main {
     margin: 0 auto;
-    margin-top: -64px;
+    /* margin-top: -64px; */
     /* padding: 70px 45px; */
 }
 
@@ -69,6 +66,18 @@ main {
     position: relative;
 }
 
+.header-img {
+    z-index: 0;
+    overflow: hidden;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: -100px;
+    
+}
+
 .header__img {
     background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/c2578c37-8569-4f88-b8f1-67a26a9ddcdd/f5f9d57b-8d7b-494f-a5ac-712f75c1217d/NG-en-20220725-popsignuptwoweeks-perspective_alpha_website_large.jpg");
     object-fit: cover;
@@ -78,15 +87,14 @@ main {
     height: 100%;
     max-width: 100%;
     width: 100%;
-    z-index: 0;
+
+    height: 736.4px;
 
     position: absolute;
-    /* max-width: 450px; */
-    /* top: -64px; */
+    top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    
 }
 
 .header__img__blur {
@@ -179,28 +187,15 @@ main {
 }
 
 .placeLabel {
-    font-size: 16px;
     color: #8c8c8c;
-    left: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-    transition: font .1s ease,top .1s ease,
-                transform .1s ease;
-    position: absolute;
-    /* z-index: -1; */
-}
-
-.placeLabel:active {
-    top: 0;
-    transform: translateY(0);
+    text-align: left;
+    font-size: 1.25rem;
 }
 
 .header__form-content .label {
     display: inline-block;
     text-align: left;
     font-weight: 400;
-    /* flex: 1 0 auto;/ */
-    /* width: 100%; */
 }
 
 .label button {
